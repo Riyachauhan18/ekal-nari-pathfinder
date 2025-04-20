@@ -61,6 +61,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				ekalNari: {
+					orange: '#FE8D3E',
+					orange2: '#FAB277',
+					purple: '#9D4EDD',
+					teal: '#2EC4B6',
+					pink: '#FF5678',
+					brown: '#8D5B4C',
+					cream: '#FFF3E2',
+					light: '#FAF5F0',
+					dark: '#333333'
 				}
 			},
 			borderRadius: {
