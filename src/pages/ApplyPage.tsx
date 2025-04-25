@@ -1,4 +1,3 @@
-
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -16,9 +15,10 @@ const ApplyPage = () => {
         
         <div className="max-w-4xl mx-auto mb-12">
           <Tabs defaultValue="steps">
-            <TabsList className="grid w-full grid-cols-3">
+            <TabsList className="grid w-full grid-cols-4">
               <TabsTrigger value="steps">Step-by-Step Guide</TabsTrigger>
               <TabsTrigger value="documents">Required Documents</TabsTrigger>
+              <TabsTrigger value="get-documents">Get Documents</TabsTrigger>
               <TabsTrigger value="offices">Where to Apply</TabsTrigger>
             </TabsList>
             
@@ -162,6 +162,92 @@ const ApplyPage = () => {
                     <p className="text-sm">
                       <strong>Note:</strong> All photocopies should be self-attested. Original documents will be required for verification at the time of submission.
                     </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            
+            <TabsContent value="get-documents" className="mt-6">
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-4">Where to Get Required Documents</h3>
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="font-semibold text-lg text-ekalNari-purple mb-2">Identity & Address Proof</h4>
+                      <ul className="list-disc pl-5 space-y-2">
+                        <li>
+                          <span className="font-medium">Aadhaar Card:</span>
+                          <ul className="list-none ml-4 mt-1">
+                            <li>Visit nearest Aadhaar Enrollment Center</li>
+                            <li>Book appointment online at UIDAI website</li>
+                            <li>Contact toll-free: 1947</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span className="font-medium">Voter ID:</span>
+                          <ul className="list-none ml-4 mt-1">
+                            <li>Visit Electoral Registration Office</li>
+                            <li>Apply online at National Voter Service Portal</li>
+                            <li>Contact BLO (Booth Level Officer)</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-lg text-ekalNari-teal mb-2">Marital Status Documents</h4>
+                      <ul className="list-disc pl-5 space-y-2">
+                        <li>
+                          <span className="font-medium">Death Certificate:</span>
+                          <ul className="list-none ml-4 mt-1">
+                            <li>Municipal Corporation/Local Body Office</li>
+                            <li>Online through state's civil registration portal</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span className="font-medium">Divorce Decree:</span>
+                          <ul className="list-none ml-4 mt-1">
+                            <li>Family Court where divorce was granted</li>
+                            <li>E-Courts website for copy of judgment</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-lg text-ekalNari-orange mb-2">Financial Documents</h4>
+                      <ul className="list-disc pl-5 space-y-2">
+                        <li>
+                          <span className="font-medium">Income Certificate:</span>
+                          <ul className="list-none ml-4 mt-1">
+                            <li>Tehsildar/Revenue Officer's office</li>
+                            <li>State's e-governance portal</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <span className="font-medium">BPL Card:</span>
+                          <ul className="list-none ml-4 mt-1">
+                            <li>Local Panchayat Office</li>
+                            <li>Municipal Corporation</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-ekalNari-cream p-4 rounded-md">
+                      <h4 className="font-semibold mb-2">Need Assistance?</h4>
+                      <p className="mb-2">
+                        If you need help obtaining any documents:
+                      </p>
+                      <ul className="list-disc pl-5 space-y-1">
+                        <li>Visit your nearest Common Service Center (CSC)</li>
+                        <li>Contact local ENSS support worker</li>
+                        <li>Call our helpline for guidance</li>
+                      </ul>
+                      <Button className="mt-4 bg-ekalNari-purple hover:bg-ekalNari-purple/90">
+                        Contact Support
+                      </Button>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
