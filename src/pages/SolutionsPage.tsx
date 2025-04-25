@@ -7,9 +7,10 @@ import {
   Building,
   Scale,
   Shield,
-  Users,
+  MapPin,
   MessageSquare,
-  BookOpen
+  BookOpen,
+  Globe
 } from "lucide-react";
 
 const solutions = [
@@ -48,10 +49,12 @@ const solutions = [
     voiceCommand: "Say 'emergency'"
   },
   {
-    title: "Community Wall",
-    description: "Connect with other single women in your district",
-    icon: <Users className="h-8 w-8 text-ekalNari-orange" />,
-    action: "Join Community"
+    title: "Nearby Help Assistant",
+    description: "Find and connect with local support workers and volunteers in your area",
+    icon: <MapPin className="h-8 w-8 text-ekalNari-orange" />,
+    action: "Find Help",
+    gesture: "Double tap to locate",
+    voiceCommand: "Say 'find help'"
   },
   {
     title: "Application Tracking",
@@ -80,6 +83,23 @@ const SolutionsPage = () => {
     <Layout>
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-10">
+          <div className="flex justify-end mb-4">
+            <select 
+              className="px-4 py-2 rounded-md border border-ekalNari-orange text-ekalNari-dark"
+              onChange={(e) => document.documentElement.lang = e.target.value}
+              defaultValue="en"
+            >
+              <option value="en">🌐 English</option>
+              <option value="hi">🌐 हिंदी</option>
+              <option value="mr">🌐 मराठी</option>
+              <option value="gu">🌐 ગુજરાતી</option>
+              <option value="bn">🌐 বাংলা</option>
+              <option value="ta">🌐 தமிழ்</option>
+              <option value="te">🌐 తెలుగు</option>
+              <option value="kn">🌐 ಕನ್ನಡ</option>
+              <option value="ml">🌐 മലയാളം</option>
+            </select>
+          </div>
           <h1 className="text-3xl font-bold text-ekalNari-dark mb-4">Solutions for Single Women</h1>
           <p className="text-ekalNari-brown max-w-3xl mx-auto mb-4">
             Practical tools and resources designed to make accessing government schemes easier
