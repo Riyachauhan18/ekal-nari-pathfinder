@@ -21,7 +21,7 @@ const HomePage = () => {
               <Link to="/eligibility">✋ Check Your Eligibility</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              <Link to="/about">👉 Learn About the Scheme</Link>
+              <Link to="/about">Learn About the Scheme</Link>
             </Button>
           </div>
         </div>
