@@ -18,10 +18,10 @@ const HomePage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-ekalNari-purple hover:bg-ekalNari-purple/90">
-              <Link to="/eligibility">Check Your Eligibility</Link>
+              <Link to="/eligibility">✋ Check Your Eligibility</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              <Link to="/about">Learn About the Scheme</Link>
+              <Link to="/about">👉 Learn About the Scheme</Link>
             </Button>
           </div>
         </div>
@@ -36,7 +36,6 @@ const HomePage = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-ekalNari-dark">How Can We Help You?</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Feature cards remain the same */}
             <div className="bg-ekalNari-light p-6 rounded-lg shadow-md text-center">
               <div className="w-16 h-16 rounded-full bg-ekalNari-purple flex items-center justify-center mx-auto mb-4">
                 <IndianRupee className="w-8 h-8 text-white" />
@@ -70,7 +69,7 @@ const HomePage = () => {
           
           <div className="mt-12 text-center">
             <Button asChild size="lg" className="bg-ekalNari-purple hover:bg-ekalNari-purple/90">
-              <Link to="/about">Start Here</Link>
+              <Link to="/about">👆 Start Here</Link>
             </Button>
           </div>
         </div>

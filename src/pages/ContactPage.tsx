@@ -62,7 +62,7 @@ const ContactPage = () => {
                 
                 <div className="pt-2">
                   <Button className="w-full bg-ekalNari-purple hover:bg-ekalNari-purple/90">
-                    Chat on WhatsApp
+                    ✍️ Chat on WhatsApp
                   </Button>
                 </div>
               </div>
@@ -89,7 +89,7 @@ const ContactPage = () => {
                 
                 <div className="pt-2">
                   <Button variant="outline" className="w-full text-ekalNari-teal border-ekalNari-teal">
-                    Get Directions
+                    👆 Get Directions
                   </Button>
                 </div>
               </div>
@@ -132,7 +132,9 @@ const ContactPage = () => {
                 </div>
                 
                 <div>
-                  <Button className="bg-ekalNari-purple hover:bg-ekalNari-purple/90">Send Message</Button>
+                  <Button className="bg-ekalNari-purple hover:bg-ekalNari-purple/90">
+                    ✉️ Send Message
+                  </Button>
                 </div>
               </form>
             </CardContent>
@@ -164,7 +166,7 @@ const ContactPage = () => {
                 
                 <div>
                   <Button className="w-full bg-ekalNari-purple hover:bg-ekalNari-purple/90">
-                    Find NGOs Near Me
+                    🔍 Find NGOs Near Me
                   </Button>
                 </div>
                 
