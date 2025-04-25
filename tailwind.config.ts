@@ -17,8 +17,8 @@ const config: Config = {
         ekalNari: {
           light: "hsl(var(--background))",
           dark: "hsl(var(--foreground))",
-          orange: "#006400", // Updated color
-          orange2: "#006400", // Consistent color
+          orange: "#00008b", // Updated to dark blue
+          orange2: "#00008b", // Consistent color
           purple: "hsl(var(--secondary))",
           teal: "hsl(var(--accent))",
           pink: "hsl(var(--destructive))",

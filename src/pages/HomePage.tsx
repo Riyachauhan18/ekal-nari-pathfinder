@@ -1,4 +1,3 @@
-
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -37,6 +36,7 @@ const HomePage = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-ekalNari-dark">How Can We Help You?</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Feature cards remain the same */}
             <div className="bg-ekalNari-light p-6 rounded-lg shadow-md text-center">
               <div className="w-16 h-16 rounded-full bg-ekalNari-purple flex items-center justify-center mx-auto mb-4">
                 <IndianRupee className="w-8 h-8 text-white" />
