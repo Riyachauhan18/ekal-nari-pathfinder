@@ -1,8 +1,7 @@
 import { Layout } from "@/components/Layout";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { useVoiceControl } from "@/hooks/useVoiceControl";
+import { SolutionCard } from "@/components/solutions/SolutionCard";
+import { ControlPanel } from "@/components/solutions/ControlPanel";
 import {
   FileCheck,
   Building,
@@ -10,9 +9,7 @@ import {
   Shield,
   Users,
   MessageSquare,
-  BookOpen,
-  Volume2,
-  Hand
+  BookOpen
 } from "lucide-react";
 
 const solutions = [
@@ -88,62 +85,25 @@ const SolutionsPage = () => {
             Practical tools and resources designed to make accessing government schemes easier
             for single women across India.
           </p>
-          <div className="flex items-center justify-center gap-4">
-            <Button 
-              variant="outline" 
-              className="flex items-center gap-2"
-              onClick={isListening ? stopListening : startListening}
-            >
-              {isListening ? (
-                <>
-                  <Volume2 className="h-4 w-4" />
-                  Stop Voice Control
-                </>
-              ) : (
-                <>
-                  <Volume2 className="h-4 w-4" />
-                  Start Voice Control
-                </>
-              )}
-            </Button>
-            <Button variant="outline" className="flex items-center gap-2">
-              <Hand className="h-4 w-4" />
-              Show Gesture Guide
-            </Button>
-          </div>
+          <ControlPanel 
+            isListening={isListening}
+            onStartListening={startListening}
+            onStopListening={stopListening}
+          />
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {solutions.map((solution, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="p-6">
-                <div className="flex justify-between items-start">
-                  <div className="bg-ekalNari-cream p-3 rounded-lg">
-                    {solution.icon}
-                  </div>
-                  {solution.badge && (
-                    <Badge variant={solution.badge === "Emergency" ? "destructive" : "default"}>
-                      {solution.badge}
-                    </Badge>
-                  )}
-                </div>
-                <h3 className="text-lg font-semibold mt-4 text-ekalNari-dark">{solution.title}</h3>
-                <p className="text-sm text-ekalNari-brown mt-2 mb-4">{solution.description}</p>
-                <div className="space-y-2">
-                  <Button className="w-full">{solution.action}</Button>
-                  <div className="flex items-center justify-between text-xs text-ekalNari-brown mt-2">
-                    <span className="flex items-center gap-1">
-                      <Hand className="h-3 w-3" />
-                      {solution.gesture}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <Volume2 className="h-3 w-3" />
-                      {solution.voiceCommand}
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </Card>
+            <SolutionCard
+              key={index}
+              title={solution.title}
+              description={solution.description}
+              icon={solution.icon}
+              badge={solution.badge}
+              action={solution.action}
+              gesture={solution.gesture}
+              voiceCommand={solution.voiceCommand}
+            />
           ))}
         </div>
       </div>
