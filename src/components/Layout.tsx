@@ -2,7 +2,7 @@
 import { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Home, IndianRupee, Book } from "lucide-react";
+import { Home, IndianRupee, Book, Lightbulb } from "lucide-react";
 
 interface LayoutProps {
   children: ReactNode;
@@ -55,6 +55,12 @@ export const Layout = ({ children }: LayoutProps) => {
             </Button>
             <Button asChild variant={pathname === "/apply" ? "default" : "ghost"} size="sm">
               <Link to="/apply">How to Apply</Link>
+            </Button>
+            <Button asChild variant={pathname === "/solutions" ? "default" : "ghost"} size="sm">
+              <Link to="/solutions" className="flex items-center gap-1">
+                <Lightbulb className="w-4 h-4" />
+                <span>Solutions</span>
+              </Link>
             </Button>
             <Button asChild variant={pathname === "/stories" ? "default" : "ghost"} size="sm">
               <Link to="/stories" className="flex items-center gap-1">
