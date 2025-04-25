@@ -69,7 +69,7 @@ const HomePage = () => {
           </div>
           
           <div className="mt-12 text-center">
-            <Button asChild size="lg" className="bg-ekalNari-orange hover:bg-ekalNari-orange/90">
+            <Button asChild size="lg" className="bg-ekalNari-purple hover:bg-ekalNari-purple/90">
               <Link to="/about">Start Here</Link>
             </Button>
           </div>

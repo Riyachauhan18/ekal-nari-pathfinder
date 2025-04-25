@@ -1,4 +1,3 @@
-
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -133,7 +132,7 @@ const ContactPage = () => {
                 </div>
                 
                 <div>
-                  <Button className="bg-ekalNari-orange hover:bg-ekalNari-orange/90">Send Message</Button>
+                  <Button className="bg-ekalNari-purple hover:bg-ekalNari-purple/90">Send Message</Button>
                 </div>
               </form>
             </CardContent>
