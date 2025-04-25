@@ -4,15 +4,13 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
-  Smartphone,
+  FileCheck,
   Building,
   Scale,
-  AlarmClock,
+  Shield,
   Users,
-  FileCheck,
   MessageSquare,
-  BookOpen,
-  Shield
+  BookOpen
 } from "lucide-react";
 
 const solutions = [

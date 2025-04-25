@@ -2,7 +2,7 @@
 import { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Home, IndianRupee, Book, Lightbulb } from "lucide-react";
+import { Home, Book, Lightbulb } from "lucide-react";
 
 interface LayoutProps {
   children: ReactNode;
