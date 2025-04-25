@@ -1,7 +1,8 @@
+
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowDown, IndianRupee } from "lucide-react";
+import { ArrowDown, IndianRupee, Users, BookOpen, Building, Scale, Shield, Heart } from "lucide-react";
 
 const HomePage = () => {
   return (
@@ -70,6 +71,110 @@ const HomePage = () => {
           <div className="mt-12 text-center">
             <Button asChild size="lg" className="bg-ekalNari-purple hover:bg-ekalNari-purple/90">
               <Link to="/about">👆 Start Here</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Common Pain Points section - NEW */}
+      <section className="py-16 px-4 bg-ekalNari-light">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-ekalNari-dark">Common Pain Points</h2>
+            <p className="mt-3 text-ekalNari-brown max-w-3xl mx-auto">
+              Understanding the challenges faced by single women helps us create better support systems
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Pain Point 1 */}
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-600">
+              <div className="flex items-center mb-4">
+                <Users className="w-8 h-8 text-teal-600 mr-3" />
+                <h3 className="text-xl font-semibold text-teal-600">Social Stigma</h3>
+              </div>
+              <p className="text-ekalNari-dark">
+                Many single women face social ostracism and exclusion from family and community, leading to isolation and emotional distress.
+              </p>
+              <div className="mt-4">
+                <Link to="/stories" className="text-ekalNari-purple hover:underline font-medium">Read related stories →</Link>
+              </div>
+            </div>
+            
+            {/* Pain Point 2 */}
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-orange-500">
+              <div className="flex items-center mb-4">
+                <IndianRupee className="w-8 h-8 text-orange-500 mr-3" />
+                <h3 className="text-xl font-semibold text-orange-500">Financial Dependency</h3>
+              </div>
+              <p className="text-ekalNari-dark">
+                Pensions may not cover basic expenses, leading to financial insecurity and struggle to meet daily needs.
+              </p>
+              <div className="mt-4">
+                <Link to="/solutions" className="text-ekalNari-purple hover:underline font-medium">Find financial solutions →</Link>
+              </div>
+            </div>
+            
+            {/* Pain Point 3 */}
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-lime-600">
+              <div className="flex items-center mb-4">
+                <BookOpen className="w-8 h-8 text-lime-600 mr-3" />
+                <h3 className="text-xl font-semibold text-lime-600">Education Barriers</h3>
+              </div>
+              <p className="text-ekalNari-dark">
+                Lack of education limits opportunities for economic independence and better-paying work, trapping women in cycles of poverty.
+              </p>
+              <div className="mt-4">
+                <Link to="/solutions" className="text-ekalNari-purple hover:underline font-medium">Explore skill programs →</Link>
+              </div>
+            </div>
+            
+            {/* Pain Point 4 */}
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
+              <div className="flex items-center mb-4">
+                <Building className="w-8 h-8 text-red-500 mr-3" />
+                <h3 className="text-xl font-semibold text-red-500">Limited Service Access</h3>
+              </div>
+              <p className="text-ekalNari-dark">
+                Geographic barriers make it difficult to access government services, healthcare, or essential resources like pension payments.
+              </p>
+              <div className="mt-4">
+                <Link to="/solutions" className="text-ekalNari-purple hover:underline font-medium">Find nearby centers →</Link>
+              </div>
+            </div>
+            
+            {/* Pain Point 5 */}
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-600">
+              <div className="flex items-center mb-4">
+                <Scale className="w-8 h-8 text-teal-600 mr-3" />
+                <h3 className="text-xl font-semibold text-teal-600">Property Rights</h3>
+              </div>
+              <p className="text-ekalNari-dark">
+                Many widows face challenges securing property and inheritance rights due to societal pressures or traditional norms.
+              </p>
+              <div className="mt-4">
+                <Link to="/solutions" className="text-ekalNari-purple hover:underline font-medium">Get legal help →</Link>
+              </div>
+            </div>
+            
+            {/* Pain Point 6 */}
+            <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-lime-600">
+              <div className="flex items-center mb-4">
+                <Shield className="w-8 h-8 text-lime-600 mr-3" />
+                <h3 className="text-xl font-semibold text-lime-600">Health Challenges</h3>
+              </div>
+              <p className="text-ekalNari-dark">
+                Physical and mental health issues, particularly for elderly women without family support, greatly affect quality of life.
+              </p>
+              <div className="mt-4">
+                <Link to="/solutions" className="text-ekalNari-purple hover:underline font-medium">Health resources →</Link>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-10 text-center">
+            <Button asChild className="bg-ekalNari-purple hover:bg-ekalNari-purple/90">
+              <Link to="/contact">✋ Need Help With These Issues?</Link>
             </Button>
           </div>
         </div>
